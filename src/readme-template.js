@@ -147,7 +147,7 @@ const generateReadMe = templateData => {
        return outputLicenses.join('\n')
     };
 
-     const genereateTips = tips => {
+     const generateTips = tips => {
         // console.log(tips)
 
 return `
@@ -207,7 +207,7 @@ ${desc}
 ${webAddress}
 <a name="usage"></a>
 ## 3. Usage Tips
-${genereateTips(projects)}
+${generateTips(projects)}
 <a name="features"></a>
 ## 4. Features
 ![caption](./assets/images/${featuresGif}.gif)
