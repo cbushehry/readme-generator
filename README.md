@@ -1,16 +1,43 @@
 # README Generator
-Easily generate a professional README file for your projects using this command-line application.
 
-## 1. Description
-This application helps developers quickly create a comprehensive and professional README file for their projects. By answering a series of prompts, the user provides the necessary information which is then formatted and outputted into a structured README file.
+A Node.js CLI tool that prompts you for project details and generates a structured, professional `README.md`.
 
-DEPLOYMENT: Project has not been deployed yet
+[GitHub Repository](https://github.com/cbushehry/readme-generator)
 
-## 2. Features
-User is prompted for project title, description, installation instructions, usage information, contribution guidelines, and contact details.
-The application generates a structured README file based on the user’s input.
-Supports various markdown elements for rich text formatting.
-## 3. Credits / Contact
-This application was created by Cameron Bushehry.
+## Getting Started
 
-Email: c.bushehry@gmail.com
+```bash
+npm install
+npm start
+```
+
+## Usage
+
+Running `npm start` walks you through a series of prompts:
+
+- GitHub username and email
+- Project title and description
+- Deployed application URL (optional)
+- Credits (optional)
+- License — multi-select from 30+ options, rendered as shields.io badges
+- Install and test commands
+- Usage tips — add as many steps as you want, each with an optional screenshot path
+
+The generated `README.md` is written to `dist/README.md`. A sample output is included at `dist/README.md` for reference.
+
+## Test Mode
+
+Run without prompts using built-in sample data:
+
+```bash
+node index.js test
+```
+
+## Tech Stack
+
+- Node.js
+- Inquirer.js v8
+
+## Contact
+
+Cameron Bushehry — c.bushehry@gmail.com
